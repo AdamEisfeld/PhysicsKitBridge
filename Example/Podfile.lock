@@ -1,0 +1,16 @@
+PODS:
+  - PhysicsKitBridge (0.1.0)
+
+DEPENDENCIES:
+  - PhysicsKitBridge (from `../`)
+
+EXTERNAL SOURCES:
+  PhysicsKitBridge:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PhysicsKitBridge: 1098d4f1652239795c79236ce227dd2d89a97d8a
+
+PODFILE CHECKSUM: c4da41d47cfcaf3dee3a97f12aa03a89e037d381
+
+COCOAPODS: 1.9.3

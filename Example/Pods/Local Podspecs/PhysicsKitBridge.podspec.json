@@ -1,0 +1,41 @@
+{
+  "name": "PhysicsKitBridge",
+  "version": "0.1.0",
+  "summary": "A short description of PhysicsKitBridge.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/AdamEisfeld/PhysicsKitBridge",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "AdamEisfeld": "adam.eisfeld@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/AdamEisfeld/PhysicsKitBridge.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "libraries": "c++",
+  "preserve_paths": "PhysicsKitBridge/Source/**",
+  "source_files": [
+    "PhysicsKitBridge/Source/bulletLib/src/**/*.{h,m,mm,cpp}",
+    "PhysicsKitBridge/Source/bulletLib/Extras/Serialize/BulletWorldImporter/**/*.{h,m,mm,cpp}",
+    "PhysicsKitBridge/Source/bulletLib/Extras/Serialize/BulletFileLoader/**/*.{h,m,mm,cpp}",
+    "PhysicsKitBridge/Source/Internal/**/*.{h,m,mm,cpp}"
+  ],
+  "exclude_files": "PhysicsKitBridge/Source/bulletLib/src/Bullet3OpenCL",
+  "static_framework": true,
+  "xcconfig": {
+    "USE_HEADERMAP": "NO",
+    "HEADER_SEARCH_PATHS": "$(SRCROOT)/../../**",
+    "USER_HEADER_SEARCH_PATHS": "$(SRCROOT)/../../**",
+    "CLANG_CXX_LANGUAGE_STANDARD": "c++11",
+    "CLANG_CXX_LIBRARY": "libc++"
+  },
+  "pod_target_xcconfig": {
+    "HEADER_SEARCH_PATHS": "$(SRCROOT)/../../**"
+  }
+}
